@@ -1,13 +1,10 @@
 
 
-.quanti-presi{
+.quanti-presi, .quali-presi{
       
-      color:azure
+      color:red;
       font-weight: bolder;
 
       
 }
 
-.quali-presi{
-      font-weight:normal;
-}
