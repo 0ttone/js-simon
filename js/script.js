@@ -21,7 +21,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
 //1)generare 5 numeri random 1 a 100 popolare lista cpu 5elemnti
 
-
+var listResult = [];
 var listUser = [];
 var listNumCpu = [];
 var maxNum = 100;
@@ -50,27 +50,21 @@ console.log(listNumCpu)
      // 3)check validità numeri /NUOVO ARRAY SUBITO QUI 5)confrontare le liste ??? -> generare lista ===
 
 setTimeout (function (){
+      while (listUser.length < numRnd){
+            var inputUser = parseInt(prompt('inserisci un numero della lista precedente'));
+            listUser.push(inputUser);
+      
+      console.log(listUser)
+      if (listNumCpu.includes(inputUser)){
+            listResult.push(inputUser);
+
+
+      }
+      }
+      console.log('Beccati '+ listResult.length + ' numeri, che sono ' + listResult);
+
+}, 5000);
+
 
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
