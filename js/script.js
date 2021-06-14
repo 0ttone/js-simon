@@ -61,8 +61,10 @@ setTimeout (function (){
 
       }
       }
+      
       console.log('Beccati '+ listResult.length + ' numeri, che sono ' + listResult);
-
+      document.querySelector('.quanti-presi').innerHTML = "hai beccato " + listResult.length + " numeri";
+      document.querySelector('.quali-presi').innerHTML = "che sono " + listResult ;
 }, 5000);
 
 
